@@ -1,0 +1,22 @@
+[
+<for each="module" in="data.modules">
+	{
+	    "artifact": "{+module.artifact+}",
+		"file": "{+module.file+}",
+		"alias": "{+module.alias+}",
+		"version": {+module.version+},
+		"type": "{+module.type+}"<if test="module.publics">,
+		"publics": {
+            <for each="pub" in="module.publics">
+               "{+$pub_key+}": {+pub+}<if test="!$pub_last">,</if>
+            </for>
+	    }</if><if test="module.statics">,
+		"statics": {
+		     <for each="sta" in="module.statics">
+               "{+$sta_key+}": {+sta+}<if test="!$sta_last">,</if>
+            </for>
+	     }
+	    </if>
+	}<if test="!$module_last">,</if>
+</for>
+]

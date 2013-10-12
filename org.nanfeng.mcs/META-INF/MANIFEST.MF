@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MCS Plugin
+Bundle-SymbolicName: org.nanfeng.mcs;singleton:=true
+Bundle-Version: 1.1.1
+Bundle-Activator: org.nanfeng.mcs.activator.Activator
+Bundle-Vendor: Howard.zuo
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.jdt.core,
+ org.eclipse.core.resources,
+ org.eclipse.wst.jsdt.core,
+ org.eclipse.text,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.workbench,
+ org.eclipse.jface,
+ org.eclipse.jdt.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: libs/jackson-core-asl-1.8.7.jar,
+ libs/jackson-mapper-asl-1.8.7.jar,
+ .,
+ libs/commons-io-2.4.jar,
+ libs/zip4j_1.3.1.jar,
+ libs/plexus-utils-3.0.10.jar,
+ libs/js.jar

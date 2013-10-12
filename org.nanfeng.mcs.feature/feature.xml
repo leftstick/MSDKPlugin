@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.nanfeng.mcs.feature"
+      label="MCS Suite"
+      version="1.1.1"
+      provider-name="Howard.zuo">
+
+   <description url="http://www.example.com/description">
+      A plugin suite for quick build MCS module.
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      Copyright (c) 2013, 2020 MCS project committers and others.  All rights reserved.
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      This plugin is designed for MCS, Avalanche and Customization developers.
+   </license>
+
+   <plugin
+         id="org.nanfeng.mcs"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+</feature>
